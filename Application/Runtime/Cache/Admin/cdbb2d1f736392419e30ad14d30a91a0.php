@@ -157,6 +157,18 @@
 <!-- Custom Theme JavaScript -->
 <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
+<script>
+    $(function(){
+        $('.mall-delete').click(function(){
+            var result = confirm('是否删除?');
+            if(!result){
+                return false;
+            }
+
+        });
+    });
+</script>
+
 </body>
 
 </html>

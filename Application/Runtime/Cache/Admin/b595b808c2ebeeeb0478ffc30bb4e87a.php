@@ -93,7 +93,7 @@
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 商品分类<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('GoodsCat/index');?>">商品分列列表</a>
+                                <a href="<?php echo U('GoodsCat/index');?>">商品分类列表</a>
                             </li>
                             <li>
                                 <a href="<?php echo U('goodsCat/add');?>">添加商品分类</a>
@@ -149,6 +149,18 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
+
+<script>
+    $(function(){
+        $('.mall-delete').click(function(){
+            var result = confirm('是否删除?');
+            if(!result){
+                return false;
+            }
+
+        });
+    });
+</script>
 
 </body>
 

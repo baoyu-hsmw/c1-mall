@@ -29,6 +29,9 @@ class GoodsCatController extends AdminBaseController
     function add(){
         if(I('post.')){
             $name = I('post.name');
+            if(!$name){
+                E('请填写完整');
+            }
             $data = [
                 'name' => $name,
                 'is_del' => 0,
@@ -53,6 +56,38 @@ class GoodsCatController extends AdminBaseController
         } else{
             $this->error('删除失败');
         }
+    }
+
+    function edit(){
+        $id = I('get.id', 0, 'intval');
+        if(!$id){
+            throw new \Exception('参数错误');
+        }
+
+        if($_POST){
+            $name = I('post.name');
+            if(!$name){
+                E('请填写完整');
+            }
+            $data = [
+                'name' => $name,
+                'is_del' => 0,
+            ];
+            if($this->model->where(['id'=>$id])->save($data)){
+                $this->success('修改成功', U('index'));
+            } else {
+                $this->error('修改失败');
+            }
+            die;
+        }
+
+        $result = $this->model->where(['id'=>$id])->find();
+        if(!$result){
+            E('不存在的记录');
+        }
+
+        $this->assign('result', $result);
+        $this->display();
     }
 
 }
