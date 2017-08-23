@@ -1,0 +1,20 @@
+<include file="./Application/Admin/View/header.inc.html" />
+<h1 class="page-header">商品分类列表</h1>
+<table class="table">
+    <tr>
+        <th>#</th>
+        <th>名称</th>
+        <th>操作</th>
+    </tr>
+    <volist name="result" id="row">
+    <tr>
+        <td>{$row.id}</td>
+        <td>{$row.name}</td>
+        <td>
+            <a href="{:U('edit', [id=>$row['id']])}" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> 修改</a>
+            <a href="{:U('del', [id=>$row['id']])}" class="btn btn-danger mall-delete"><i class="glyphicon glyphicon-trash"></i> 删除</a>
+        </td>
+    </tr>
+    </volist>
+</table>
+<include file="./Application/Admin/View/footer.inc.html" />
