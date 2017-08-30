@@ -1,0 +1,59 @@
+<include file="./Application/Home/View/header.inc.html" />
+<!--//////////////////////////////////////////////////-->
+<!--/////////////////// Page body //////////////////////-->
+<!--//////////////////////////////////////////////////-->
+<div id="page-content" class="single-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="breadcrumb">
+					<li><a href="index.html">掌圈龙南</a></li>
+					<li><a href="index.html">手机</a></li>
+					<li><a href="cart.html">商品列表</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div id="main-content" class="col-md-8">
+				<!-- 行, 开始 -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="products">
+							<volist name="result" id="row">
+							<!-- 列, 开始 -->
+							<div class="col-lg-4 col-md-4 col-xs-12">
+								<div class="product">
+									<div class="image"><a href="product.html"><img src="Uploads/Goods/{$row.cover}" /></a></div>
+									<div class="buttons">
+										<a class="btn cart" href="{:U('cart/add', [id=>$row['id']])}"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+										<a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+
+									</div>
+									<div class="caption">
+										<div class="name"><h3><a href="product.html">{$row.name}</a></h3></div>
+										<div class="price">￥{$row.price}<span>￥{$row.original_price}</span></div>
+										<div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+									</div>
+								</div>
+							</div>
+							<!-- 列, 结束 -->
+							</volist>
+						</div>
+					</div>
+				</div>
+				<!-- 行, 结束 -->
+
+				<div class="row text-center">
+					<ul class="pagination">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="./Application/Home/View/footer.inc.html" />

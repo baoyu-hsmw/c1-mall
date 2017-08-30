@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>掌圈龙南</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="__PUBLIC__/index/css/bootstrap.min.css"  type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="__PUBLIC__/index/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="__PUBLIC__/index/font-awesome/css/font-awesome.min.css"  type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/index/fonts/font-slider.css" type="text/css">
+
+    <!-- jQuery and Modernizr-->
+    <script src="__PUBLIC__/index/js/jquery-2.1.1.js"></script>
+
+    <!-- Core JavaScript Files -->
+    <script src="__PUBLIC__/index/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/index/js/html5shiv.js"></script>
+    <script src="__PUBLIC__/index/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--Top-->
+<nav id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+
+            </div>
+            <div class="col-xs-6">
+                <ul class="top-link">
+                    <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> 我的掌圈</a></li>
+                    <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> 联系客服</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--Header-->
+<header class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="logo"><img src="__PUBLIC__/index/images/logo.png" /></div>
+        </div>
+        <div class="col-md-4">
+            <form class="form-search" method="get" action="{:U('goods/search')}">
+                <input type="text" class="input-medium search-query" name="keyword" placeholder="在此输入关键字">
+                <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <div id="cart"><a class="btn btn-1" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>购物车 : 000 件商品</a></div>
+        </div>
+    </div>
+</header>
+<!--Navigation-->
+<nav id="menu" class="navbar">
+    <div class="container">
+        <div class="navbar-header"><span id="heading" class="visible-xs">分类</span>
+            <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <!-- 这里读商品分类 -->
+            </ul>
+        </div>
+    </div>
+</nav>

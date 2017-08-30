@@ -1,0 +1,12 @@
+CREATE VIEW `v_goods_list` AS
+SELECT `g`.`id`, `g`.`name`, `g`.`price`, `g`.`original_price`,
+`g`.`rate`, `g`.`inventory`, `g`.`saled_num`, `g`.`cover`,
+`c`.`id` AS `cat_id`, `c`.`name` AS `cat_name`,
+`g`.`is_del`,`g`.`status`,
+`b`.`id` AS `brand_id`, `b`.`name` AS `brand_name`,
+`b`.`logo` AS `brand_logo`
+FROM `goods` AS `g`
+INNER JOIN `goods_cat` AS `c`
+ON `g`.`goods_cat_id`=`c`.`id`
+INNER JOIN `brand` AS `b`
+ON `g`.`brand_id`=`b`.`id`
