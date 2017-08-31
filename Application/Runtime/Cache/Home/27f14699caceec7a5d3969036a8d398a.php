@@ -84,83 +84,59 @@
     </div>
 </nav>
 <!--//////////////////////////////////////////////////-->
-<!--///////////////////Cart Page//////////////////////-->
+<!--/////////////////// Page body //////////////////////-->
 <!--//////////////////////////////////////////////////-->
 <div id="page-content" class="single-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="breadcrumb">
-                    <li><a href="index.html">掌圈龙南</a></li>
-                    <li><a href="cart.html">购物车</a></li>
-                </ul>
-            </div>
-        </div>
-        <?php if(empty($cart_items)): ?><div class="alert alert-info">你的购物车为空</div>
-            <?php else: ?>
-            <!-- 商品列表,开始-->
-            <?php if(is_array($cart_items)): $i = 0; $__LIST__ = $cart_items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row): $mod = ($i % 2 );++$i;?><div class="row">
-                    <div class="product well">
-                        <div class="col-md-3">
-                            <div class="image">
-                                <img src="Uploads/Goods/<?php echo ($row["cover"]); ?>" />
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="caption">
-                                <div class="name"><h3><a href="product.html"><?php echo ($row["name"]); ?></a></h3></div>
-                                <div class="info">
-                                    <ul>
-                                        <li>品牌: <?php echo ((isset($row["brand_name"]) && ($row["brand_name"] !== ""))?($row["brand_name"]):'无品牌'); ?></li>
-                                        <li>ID: <?php echo ($row["id"]); ?></li>
-                                    </ul>
-                                </div>
-                                <div class="price">￥<?php echo ($row["price"]); ?><span>￥<?php echo ((isset($row["original_price"]) && ($row["original_price"] !== ""))?($row["original_price"]):$row['price']); ?></span></div>
-                                <label>数量: </label> <input class="form-inline quantity" type="text" value="<?php echo ($row["num"]); ?>"><a href="#" class="btn btn-2 ">更新数量</a>
-                                <hr>
-                                <a href="#" class="btn btn-default pull-right">移出</a>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div><?php endforeach; endif; else: echo "" ;endif; ?>
-            <!-- 商品列表,结束-->
-            <div class="row">
-                <div class="col-md-4 col-md-offset-8 ">
-                    <center><a href="<?php echo U('goods/index');?>" class="btn btn-1">继续购物</a></center>
-                </div>
-            </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="breadcrumb">
+					<li><a href="index.html">掌圈龙南</a></li>
+					<li><a href="index.html">商品搜索</a></li>
+					<li><a href="cart.html">关键字: <?php echo ($keyword); ?></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div id="main-content" class="col-md-8">
+				<!-- 行, 开始 -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="products">
+							<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row): $mod = ($i % 2 );++$i;?><!-- 列, 开始 -->
+							<div class="col-lg-4 col-md-4 col-xs-12">
+								<div class="product">
+									<div class="image"><a href="product.html"><img src="Uploads/Goods/<?php echo ($row["cover"]); ?>" /></a></div>
+									<div class="buttons">
+										<a class="btn cart" href="<?php echo U('cart/add', [id=>$row['id']]);?>"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+										<a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
 
-            <!-- 购物车汇总,开始-->
-            <div class="row">
-                <div class="pricedetails">
-                    <div class="col-md-4 col-md-offset-8">
-                        <table>
-                            <h6>汇总</h6>
-                            <tr>
-                                <td>小计</td>
-                                <td>350.00</td>
-                            </tr>
-                            <tr>
-                                <td>折扣</td>
-                                <td>-----</td>
-                            </tr>
-                            <tr>
-                                <td>运费</td>
-                                <td>100.00</td>
-                            </tr>
-                            <tr style="border-top: 1px solid #333">
-                                <td><h5>合计</h5></td>
-                                <td>400.00</td>
-                            </tr>
-                        </table>
-                        <center><a href="#" class="btn btn-1">结算</a></center>
-                    </div>
-                </div>
-            </div>
-            <!-- 购物车汇总,结束--><?php endif; ?>
+									</div>
+									<div class="caption">
+										<div class="name"><h3><a href="product.html"><?php echo ($row["name"]); ?></a></h3></div>
+										<div class="price">￥<?php echo ($row["price"]); ?><span>￥<?php echo ($row["original_price"]); ?></span></div>
+										<div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+									</div>
+								</div>
+							</div>
+							<!-- 列, 结束 --><?php endforeach; endif; else: echo "" ;endif; ?>
+						</div>
+					</div>
+				</div>
+				<!-- 行, 结束 -->
 
-    </div>
+				<div class="row text-center">
+					<ul class="pagination">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <footer>
     <div class="container">

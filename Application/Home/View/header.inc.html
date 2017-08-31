@@ -57,13 +57,13 @@
             <div id="logo"><img src="__PUBLIC__/index/images/logo.png" /></div>
         </div>
         <div class="col-md-4">
-            <form class="form-search" method="get" action="{:U('goods/search')}">
-                <input type="text" class="input-medium search-query" name="keyword" placeholder="在此输入关键字">
+            <form class="form-search" method="get" action="{:U('goods/search')}" id="frmSearch">
+                <input type="text" class="input-medium search-query" id="keyword" name="keyword" placeholder="在此输入关键字">
                 <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
             </form>
         </div>
         <div class="col-md-4">
-            <div id="cart"><a class="btn btn-1" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>购物车 : 000 件商品</a></div>
+            <div id="cart"><a class="btn btn-1" href="{:U('cart/index')}"><span class="glyphicon glyphicon-shopping-cart"></span>购物车 : {$_cart_item_num_} 件商品</a></div>
         </div>
     </div>
 </header>
@@ -76,7 +76,11 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">首页</a></li>
-                <!-- 这里读商品分类 -->
+                <volist name="_goods_cat_list_" id="row">
+                    <li><a href="{:U('goods/index', [cat => $row['id']])}">{$row.name}</a></li>
+                </volist>
+
+
             </ul>
         </div>
     </div>

@@ -57,13 +57,13 @@
             <div id="logo"><img src="/Public/index/images/logo.png" /></div>
         </div>
         <div class="col-md-4">
-            <form class="form-search" method="get" action="<?php echo U('goods/search');?>">
-                <input type="text" class="input-medium search-query" name="keyword" placeholder="在此输入关键字">
+            <form class="form-search" method="get" action="<?php echo U('goods/search');?>" id="frmSearch">
+                <input type="text" class="input-medium search-query" id="keyword" name="keyword" placeholder="在此输入关键字">
                 <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
             </form>
         </div>
         <div class="col-md-4">
-            <div id="cart"><a class="btn btn-1" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>购物车 : 000 件商品</a></div>
+            <div id="cart"><a class="btn btn-1" href="<?php echo U('cart/index');?>"><span class="glyphicon glyphicon-shopping-cart"></span>购物车 : <?php echo ($_cart_item_num_); ?> 件商品</a></div>
         </div>
     </div>
 </header>
@@ -76,7 +76,9 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">首页</a></li>
-                <!-- 这里读商品分类 -->
+                <?php if(is_array($_goods_cat_list_)): $i = 0; $__LIST__ = $_goods_cat_list_;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('goods/index', [cat => $row['id']]);?>"><?php echo ($row["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
             </ul>
         </div>
     </div>
@@ -90,7 +92,7 @@
 			<div class="col-lg-12">
 				<ul class="breadcrumb">
 					<li><a href="index.html">掌圈龙南</a></li>
-					<li><a href="index.html">手机</a></li>
+					<li><a href="index.html"><?php echo ((isset($result["0"]["cat_name"]) && ($result["0"]["cat_name"] !== ""))?($result["0"]["cat_name"]):'未知商品'); ?></a></li>
 					<li><a href="cart.html">商品列表</a></li>
 				</ul>
 			</div>
@@ -195,5 +197,20 @@
         </div>
     </div>
 </footer>
+<script>
+    $(function () {
+       $('#frmSearch').submit(function(){
+          var keyword = $('#keyword').val();
+          if(!keyword){
+              alert('请输入关键字');
+              return false;
+          }
+          var url = $(this).attr('action');
+          url += '&keyword=' + keyword;
+          location.href = url;
+          return false;
+       });
+    });
+</script>
 </body>
 </html>

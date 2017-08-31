@@ -57,5 +57,20 @@
         </div>
     </div>
 </footer>
+<script>
+    $(function () {
+       $('#frmSearch').submit(function(){
+          var keyword = $('#keyword').val();
+          if(!keyword){
+              alert('请输入关键字');
+              return false;
+          }
+          var url = $(this).attr('action');
+          url += '&keyword=' + keyword;
+          location.href = url;
+          return false;
+       });
+    });
+</script>
 </body>
 </html>

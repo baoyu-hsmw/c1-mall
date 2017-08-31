@@ -20,14 +20,16 @@ class GoodsController extends HomeBaseControoler
         $page_size = 9;
         $cat_id = I('get.' . Constant::GOODS_CAT_ARG_NAME, 0, 'intval');
 
+
         $where = [
             'is_del' => Constant::UNDELETED,
             'status' => Constant::GOODS_STATUS_ON,
         ];
 
         if($cat_id){
-            $where['goods_cat_id'] = $cat_id;
+            $where['cat_id'] = $cat_id;
         }
+
 
         $model = M('v_goods_list');
         $result = $model->where($where)->page("{$page},{$page_size}")->order('`id` DESC')->select();
@@ -41,7 +43,32 @@ class GoodsController extends HomeBaseControoler
     }
 
     function search(){
+        $keyword = I('get.keyword', '');
+        if(!$keyword){
+            E('参数错误');
+        }
+        $page = I('get.p', 0, 'intval');
+        $page_size = 9;
 
+
+
+        $where = [
+            'is_del' => Constant::UNDELETED,
+            'status' => Constant::GOODS_STATUS_ON,
+            'name' => ['like', "%{$keyword}%"]
+        ];
+
+
+        $model = M('v_goods_list');
+        $result = $model->where($where)->page("{$page},{$page_size}")->order('`id` DESC')->select();
+        $count = $model->where($where)->count();
+        $page_obj = new Page($count, $page_size);
+        $show = $page_obj->show();
+
+        $this->assign('result', $result);
+        $this->assign('show', $show);
+        $this->assign('keyword', $keyword);
+        $this->display();
     }
 
     function detail(){
