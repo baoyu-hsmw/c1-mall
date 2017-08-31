@@ -43,7 +43,7 @@
             </div>
             <div class="col-xs-6">
                 <ul class="top-link">
-                    <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> 我的掌圈 <?php echo ($_user_id_); ?></a></li>
+                    <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> 我的掌圈</a></li>
                     <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> 联系客服</a></li>
                 </ul>
             </div>
@@ -91,49 +91,52 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<ul class="breadcrumb">
-					<li><a href="index.html">掌圈龙南</a></li>
-					<li><a href="index.html"><?php echo ((isset($result["0"]["cat_name"]) && ($result["0"]["cat_name"] !== ""))?($result["0"]["cat_name"]):'未知商品'); ?></a></li>
-					<li><a href="cart.html">商品列表</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cart.html">Cart</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
-			<div id="main-content" class="col-md-8">
-				<!-- 行, 开始 -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="products">
-							<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row): $mod = ($i % 2 );++$i;?><!-- 列, 开始 -->
-							<div class="col-lg-4 col-md-4 col-xs-12">
-								<div class="product">
-									<div class="image"><a href="product.html"><img src="Uploads/Goods/<?php echo ($row["cover"]); ?>" /></a></div>
-									<div class="buttons">
-										<a class="btn cart" href="<?php echo U('cart/add', [id=>$row['id']]);?>"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-										<a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
-
-									</div>
-									<div class="caption">
-										<div class="name"><h3><a href="product.html"><?php echo ($row["name"]); ?></a></h3></div>
-										<div class="price">￥<?php echo ($row["price"]); ?><span>￥<?php echo ($row["original_price"]); ?></span></div>
-										<div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
-									</div>
-								</div>
-							</div>
-							<!-- 列, 结束 --><?php endforeach; endif; else: echo "" ;endif; ?>
-						</div>
+			<div class="col-md-6">
+				<div class="heading"><h2>登陆</h2></div>
+				<form name="form1" id="ff1" method="post" action="<?php echo U('login');?>">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="用户名 :" name="username" id="username_login" required>
 					</div>
-				</div>
-				<!-- 行, 结束 -->
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="密码 :" name="password" id="password_login" required>
+					</div>
+					<button type="submit" class="btn btn-1" name="login" id="login">登陆</button>
+					<a href="#">忘记密码?</a>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<div class="heading"><h2>新用户? 创建一个账号.</h2></div>
+				<form name="form2" id="ff2" method="post" action="<?php echo U('register');?>">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="用户名 :" name="username" id="username_register" required>
+					</div>
 
-				<div class="row text-center">
-					<ul class="pagination">
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-					</ul>
-				</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Email :" name="email" id="email_register" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Mobile :" name="mobile" id="mobile_register" required>
+					</div>
+					<div class="form-group">
+						<input name="gender" id="gender_1" value="1" type="radio"> 男 <input name="gender" id="gender_0" type="radio" value="0"> 女
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="密码 :" name="password" id="password_register" required>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="重复密码 :" name="repassword" id="repassword" required>
+					</div>
+					<div class="form-group">
+						<input name="agree" id="agree" type="checkbox" value="1" checked required > 我同意服务条款.
+					</div>
+					<button type="submit" class="btn btn-1">注册</button>
+				</form>
 			</div>
 		</div>
 	</div>

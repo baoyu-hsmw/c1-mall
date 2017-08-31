@@ -19,7 +19,29 @@ class CartController extends HomeBaseControoler
         if(json_last_error() !== JSON_ERROR_NONE){
             $cart = [];
         }
+        $total_price = 0;
+        $total_original_price = 0;
+        foreach ($cart as $item){
+            $item_amount = $item['price'] * $item['num'];
+            $item_original_amout = $item['original_price'] * $item['num'];
+            $total_price += $item_amount;
+            $total_original_price += $item_original_amout;
+        }
+
+        //京东: 满99免邮费,否则6元邮费
+        $delivery = ($total_price >= 99) ? 0 : 6;
+
+        //折扣
+        $sale = $total_original_price - $total_price;
+
+        $amount = $total_price + $delivery;
+
         $this->assign('cart_items', $cart);
+        $this->assign('total_price', $total_price);
+        $this->assign('delivery', $delivery);
+        $this->assign('sale', $sale);
+        $this->assign('amount', $amount);
+
         $this->display();
     }
     function add(){

@@ -2829,3 +2829,770 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2017-08-31T15:10:08+08:00 ] 127.0.0.1 /index.php?c=goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.091022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017980s ]
+SQL: SHOW COLUMNS FROM `v_goods_list` [ RunTime:0.2910s ]
+SQL: SELECT * FROM `v_goods_list` WHERE `is_del` = 0 AND `status` = 0 ORDER BY `id` DESC LIMIT 0,9   [ RunTime:0.0360s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_goods_list` WHERE `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:10:23+08:00 ] 127.0.0.1 /index.php?m=Home&c=cart&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.016182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016182s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:20:52+08:00 ] 127.0.0.1 /index.php?m=Home&c=cart&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:21:16+08:00 ] 127.0.0.1 /index.php?m=Home&c=cart&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:22:58+08:00 ] 127.0.0.1 /index.php?m=Home&c=cart&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:23:05+08:00 ] 127.0.0.1 /index.php?m=Home&c=order&a=create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Order
+
+[ 2017-08-31T15:26:06+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=acount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:acount
+
+[ 2017-08-31T15:26:12+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:27:09+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:29:20+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:29:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:30:49+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:34:01+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:34:12+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:34:42+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:35:00+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:36:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:40:44+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:40:55+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:47:09+08:00 ] 127.0.0.1 /index.php?m=Home&c=user&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:47:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: INSERT INTO `user` (`username`,`email`,`mobile`,`gender`,`password`,`salt`,`is_del`) VALUES ('zhangsan','zhangsan@163.com','13800138000','1','575d9dacd1efa962e8ca91f981874584','edb526','0') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:47:36+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:55:23+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\bd2edf4e9457cbeb6d9205aa99fa0e56.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:55:38+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangsan1111' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:55:49+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangsan' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:56:00+08:00 ] 127.0.0.1 /index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangsan' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:56:02+08:00 ] 127.0.0.1 /index.php?m=Home&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_goods_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_goods_list` WHERE `is_del` = 0 AND `status` = 0 ORDER BY `id` DESC LIMIT 0,9   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_goods_list` WHERE `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T15:58:36+08:00 ] 127.0.0.1 /index.php?m=Home&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_goods_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_goods_list` WHERE `is_del` = 0 AND `status` = 0 ORDER BY `id` DESC LIMIT 0,9   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_goods_list` WHERE `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 79 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Project\mall\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T16:29:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=address&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\54c71aff22a90af008ddf5f7164037fa.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\54c71aff22a90af008ddf5f7164037fa.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\54c71aff22a90af008ddf5f7164037fa.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\54c71aff22a90af008ddf5f7164037fa.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\54c71aff22a90af008ddf5f7164037fa.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T16:30:10+08:00 ] 127.0.0.1 /index.php?m=Home&c=address&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `is_default`='0' WHERE `user_id` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `address` (`is_default`,`addressee`,`address`,`mobile`,`user_id`) VALUES ('1','张三','江西赣州龙南商贸街','13800138000','1') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T16:30:11+08:00 ] 127.0.0.1 /index.php?m=Home&c=Address&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index
+
+[ 2017-08-31T16:31:12+08:00 ] 127.0.0.1 /index.php?m=Home&c=cart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+NOTIC: [8] Undefined index: original_price D:\Project\mall\Application\Home\Controller\CartController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `goods_cat` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods_cat` WHERE `is_del` = 0 ORDER BY `id` ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+NOTIC: [8] Use of undefined constant cat - assumed 'cat' D:\Project\mall\Application\Runtime\Cache\Home\6f105010063b4e4da2af04cb5dd2d5a4.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-31T16:32:00+08:00 ] 127.0.0.1 /index.php?m=Home&c=order&a=create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -32,6 +32,12 @@ class HomeBaseControoler extends Controller
 
         $this->assign('_goods_cat_list_', $result);
 
+        $this->assign('_user_id_', $this->getUserID());
+
         parent::display($templateFile, $charset, $contentType, $content, $prefix);
+    }
+
+    protected function getUserID(){
+        return Session('user.id');
     }
 }

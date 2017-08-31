@@ -139,22 +139,22 @@
                             <h6>汇总</h6>
                             <tr>
                                 <td>小计</td>
-                                <td>350.00</td>
+                                <td><?php echo ($total_price); ?></td>
                             </tr>
                             <tr>
                                 <td>折扣</td>
-                                <td>-----</td>
+                                <td>-<?php echo ($sale); ?></td>
                             </tr>
                             <tr>
                                 <td>运费</td>
-                                <td>100.00</td>
+                                <td><?php echo ($delivery); ?></td>
                             </tr>
                             <tr style="border-top: 1px solid #333">
                                 <td><h5>合计</h5></td>
-                                <td>400.00</td>
+                                <td><?php echo ($amount); ?></td>
                             </tr>
                         </table>
-                        <center><a href="#" class="btn btn-1">结算</a></center>
+                        <center><a href="<?php echo U('order/create');?>" class="btn btn-1">结算</a></center>
                     </div>
                 </div>
             </div>
