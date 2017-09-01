@@ -1,0 +1,32 @@
+<include file="./Application/Home/View/header.inc.html" />
+<!--//////////////////////////////////////////////////-->
+<!--/////////////////// Page body //////////////////////-->
+<!--//////////////////////////////////////////////////-->
+<div id="page-content" class="single-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cart.html">Cart</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form action="__SELF__" method="post">
+					<div class="form-group">
+						<label for="address">收货地址</label>
+						<select name="address" id="address" class="form-control">
+							<volist name="address_list" id="row">
+								<option value="{$row.id}" <eq name="row.is_default" value="1"> selected="selected"</eq>>{$row.addressee} - {$row.address}（{$row.mobile}）</option>
+							</volist>
+						</select>
+					</div>
+					<input type="submit" value="继续" class="btn btn-primary btn-lg">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="./Application/Home/View/footer.inc.html" />
